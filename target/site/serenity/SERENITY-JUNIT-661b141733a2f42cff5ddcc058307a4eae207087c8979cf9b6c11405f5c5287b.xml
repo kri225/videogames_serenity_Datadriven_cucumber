@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="Testing different request on the Videogame application" skipped="0" tests="4" time="8.43" timestamp="2021-08-04T23:02:26.517+01:00[Europe/London]"><testcase name="Check if the videogame application can be access by users"/><testcase name="Create a new videogame and verify if the videogame is added"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;500&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;500&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;500&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.videogames.cucumber.steps.MyStepdefs.iCreateANewVideogameByProvidingTheInformationIdNameReleaseDateReviewScoreCategoryRating(MyStepdefs.java:42)&#13;
+✽.When I create a new videogame by providing the information id"5" name"Yakitri" releaseDate"2021-08-01T10:02:16.369Z" reviewScore"59" category"Cardguard" rating"5"(src/test/java/resources/feature/videogame.feature:7)&#13;
+</system-err></testcase><testcase name="Update a videogame and verify it has been updated"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;500&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.videogames.cucumber.steps.MyStepdefs.iUpdateAVidogameByProvidingNewCategoryRating(MyStepdefs.java:60)&#13;
+✽.When I update a vidogame by providing new "&lt;name&gt;" category rating(src/test/java/resources/feature/videogame.feature:14)&#13;
+</system-err></testcase><testcase name="Delete a created videogame &amp; verify the videogame is deleted"><failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;500&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;500&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;500&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.videogames.cucumber.steps.MyStepdefs.iVerifyTheVideogameIsDeleted(MyStepdefs.java:79)&#13;
+✽.Then I verify the videogame is deleted(src/test/java/resources/feature/videogame.feature:19)&#13;
+</system-err></testcase></testsuite>
